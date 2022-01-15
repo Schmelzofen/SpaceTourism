@@ -6,8 +6,8 @@ const Douglas = () => {
     return (
         <>
             <Crew
-                title={data.crew[0].role}
-                person={data.crew[0].name}
+                title={data.crew[0].role.toUpperCase()}
+                person={data.crew[0].name.toUpperCase()}
                 text={data.crew[0].bio}
                 image={data.crew[0].images.png}
             />

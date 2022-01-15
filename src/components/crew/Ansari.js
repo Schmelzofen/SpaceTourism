@@ -5,8 +5,8 @@ const Ansari = () => {
     return (
         <>
             <Crew
-                title={data.crew[3].role}
-                person={data.crew[3].name}
+                title={data.crew[3].role.toUpperCase()}
+                person={data.crew[3].name.toUpperCase()}
                 text={data.crew[3].bio}
                 image={data.crew[3].images.png}
             />

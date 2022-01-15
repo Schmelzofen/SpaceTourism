@@ -3,24 +3,16 @@ import data from "../../data.json"
 const Moon = () => {
     return (
         <>
-            <Planet />
-            <section className="planetSection">
-                <div className="planetLeft">
-                    <img src={data.destinations[0].images.png} alt={data.destinations[0].name} />
-                </div>
-                <div className="planetRightTop">
-                    <h1>{data.destinations[0].name} </h1>
-                    <p>{data.destinations[0].description} </p>
-                </div>
-                <div className="planetRightBottom">
-                    <hr />
-                    <span>AVG. DISTANCE</span>
-                    <span>EST. TRAVEL TIME</span>
-                    <br />
-                    <span>{data.destinations[0].distance} </span>
-                    <span>{data.destinations[0].travel} </span>
-                </div>
-            </section>
+            <Planet
+                img={data.destinations[0].images.png}
+                name={data.destinations[0].name.toUpperCase()}
+                description={data.destinations[0].description}
+                distanceText={"AVG. DISTANCE"}
+                travelText={"EST. TRAVEL TIME"}
+                distance={data.destinations[0].distance}
+                travel={data.destinations[0].travel}
+                hr={<hr />}
+            />
         </>
     );
 }

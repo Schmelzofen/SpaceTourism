@@ -2,26 +2,18 @@ import Planet from "../Planet"
 import data from "../../data.json"
 
 const Europa = () => {
-    return (  
+    return (
         <>
-            <Planet />
-            <section className="planetSection">
-                <div className="planetLeft">
-                    <img src={data.destinations[2].images.png} alt={data.destinations[2].name} />
-                </div>
-                <div className="planetRightTop">
-                    <h1>{data.destinations[2].name} </h1>
-                    <p>{data.destinations[2].description} </p>
-                </div>
-                <div className="planetRightBottom">
-                    <hr />
-                    <span>AVG. DISTANCE</span>
-                    <span>EST. TRAVEL TIME</span>
-                    <br />
-                    <span>{data.destinations[2].distance} </span>
-                    <span>{data.destinations[2].travel} </span>
-                </div>
-            </section>
+            <Planet
+                img={data.destinations[2].images.png}
+                name={data.destinations[2].name.toUpperCase()}
+                description={data.destinations[2].description}
+                distanceText={"AVG. DISTANCE"}
+                travelText={"EST. TRAVEL TIME"}
+                distance={data.destinations[2].distance}
+                travel={data.destinations[2].travel}
+                hr={<hr />}
+            />
         </>
     );
 }

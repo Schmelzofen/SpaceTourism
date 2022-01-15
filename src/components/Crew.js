@@ -7,18 +7,20 @@ const Crew = ({ title, person, text, image }) => {
             <div>
                 <section className="crewMember">
                     <div className="left">
-                        {title}
-                        {person}
-                        {text}
+                        <p>{title}</p>
+                        <h1>{person}</h1>
+                        <p>{text}</p>
                     </div>
                     <div className="right">
                         <img src={image} alt={person} />
                     </div>
                 </section>
-                <Link to="/crew/douglas"><div className="whiteballs"></div></Link>
-                <Link to="/crew/mark"><div className="whiteballs"></div></Link>
-                <Link to="/crew/victor"><div className="whiteballs"></div></Link>
-                <Link to="/crew/ansari"><div className="whiteballs"></div></Link>
+                <div className="whiteballs">
+                    <Link to="/crew/douglas"><div className="ball1"></div></Link>
+                    <Link to="/crew/mark"><div className="ball2"></div></Link>
+                    <Link to="/crew/victor"><div className="ball3"></div></Link>
+                    <Link to="/crew/ansari"><div className="ball4"></div></Link>
+                </div>
             </div>
         </section>
     );
