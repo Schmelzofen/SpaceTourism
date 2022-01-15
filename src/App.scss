@@ -366,3 +366,46 @@ select {
     }
   }
 }
+
+.tech {
+  background: url("./assets/technology/background-technology-desktop.jpg") center/cover no-repeat;
+  min-height: 100vh;
+  padding: 12% 0 0 10%;
+
+  span {
+    color: grey;
+    margin-right: 5px;
+  }
+
+  h1 {
+    color: white;
+    font-family: Barlow Condensed;
+    font-weight: 500;
+    font-size: 5vh;
+    letter-spacing: 2px;
+  }
+
+  .techNav {
+    position: absolute;
+    bottom: 120px;
+    left: 140px;
+
+    div {
+      height: 100px;
+      width: 100px;
+      background: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin-top: 30px;
+    }
+  }
+}
+
+.link2 {
+  text-decoration: none;
+  color: black;
+  font-family: Bellefair Display;
+  font-size: 5vh;
+}
