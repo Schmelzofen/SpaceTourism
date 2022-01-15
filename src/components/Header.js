@@ -9,15 +9,15 @@ const Header = () => {
             <div className="headerBar">
                 <nav>
                     <ul>
-                        <li><span>00</span><Link className="link" to="/">HOME</Link></li>
-                        <li><span>01</span><Link className="link" to="/destination">DESTINATION</Link></li>
-                        <li><span>02</span><Link className="link" to="/crew">CREW</Link></li>
-                        <li><span>03</span><Link className="link" to="/tech">TECHNOLOGY</Link></li>
+                        <li><Link className="link" to="/"><span>00</span>HOME</Link></li>
+                        <li><Link className="link" to="/destination"><span>01</span>DESTINATION</Link></li>
+                        <li><Link className="link" to="/crew"><span>02</span>CREW</Link></li>
+                        <li><Link className="link" to="/tech"><span>03</span>TECHNOLOGY</Link></li>
                     </ul>
                 </nav>
             </div>
             <div className="blurBar">
-                
+
             </div>
         </div>
     );

@@ -99,7 +99,7 @@ select {
   .headerBar {
     position: absolute;
     left: 620px;
-    padding: 3% 0%;
+    padding: 2% 0%;
     width: 820px;
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(81.5485px);
@@ -110,14 +110,19 @@ select {
     ul {
       display: flex;
       list-style-type: none;
+      font-family: Barlow Condensed;
 
       span {
         color: white;
-        margin-right: 5px;
+        margin-right: 7px;
+        font-weight: bolder;
+        font-size: 3.3vh;
       }
 
       li {
-        margin-left: 20px;
+        margin-left: 10px;
+        margin-right: 40px;
+        font-size: 3.3vh;
       }
     }
   }
@@ -131,6 +136,20 @@ select {
 .home {
   background: url("./assets/home/background-home-desktop.jpg") center/cover no-repeat;
   min-height: 100vh;
+
+  .explore {
+    position: absolute;
+    bottom: 100px;
+    right: 60px;
+    padding: 8% 4%;
+    background: white;
+    display: inline;
+    border-radius: 50%;
+    font-family: Bellefair Display;
+    font-size: 5vh;
+    font-weight: lighter;
+    letter-spacing: 2px;
+  }
 }
 
 .whiteballs {
@@ -144,4 +163,31 @@ select {
 .destination {
   background: url("./assets/destination/background-destination-desktop.jpg") center/cover no-repeat;
   min-height: 100vh;
+}
+
+.travel {
+  padding: 20% 0 0 10%;
+  color: white;
+  font-family: Barlow Condensed;
+
+  h1 {
+    font-size: 20vh;
+    font-family: Bellefair DIsplay;
+    font-weight: lighter;
+    margin-bottom: -20px;
+  }
+
+  p {
+    color: #D0D6F9;
+
+    &:nth-of-type(1) {
+      font-size: 5.5vh;
+      margin-bottom: -30px;
+    }
+
+    &:nth-of-type(2) {
+      width: 34%;
+      font-size: 3vh;
+    }
+  }
 }
