@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 
-const Technology = () => {
+const Technology = ({ name, description, image, terminology }) => {
     return (
         <section className="tech">
             <h1><span>03</span> SPACE LAUNCH 101</h1>
@@ -22,6 +22,16 @@ const Technology = () => {
                     border: isActive ? "none" : null,
                 })}><div className="">3</div></NavLink>
             </div>
+            <article className="launch">
+                <div className="launchLeft">
+                    <p>{terminology}</p>
+                    <h1>{name}</h1>
+                    <p>{description}</p>
+                </div>
+                <div className="launchRight">
+                    <img src={image} alt={name} />
+                </div>
+            </article>
         </section>
     );
 }

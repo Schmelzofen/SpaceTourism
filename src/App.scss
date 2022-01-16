@@ -62,6 +62,7 @@ select {
 /* Bellefair, Barlow Condensed */
 .App {
   position: relative;
+  overflow: hidden;
 }
 
 .header {
@@ -412,7 +413,7 @@ select {
   .techNav {
     position: absolute;
     bottom: 100px;
-    left: 140px;
+    left: 100px;
 
     .ball {
       height: 100px;
@@ -440,4 +441,40 @@ select {
 
 .invisible {
   display: none;
+}
+
+.launch {
+  position: relative;
+  overflow: hidden;
+  margin-left: 5%;
+
+  .launchLeft {
+    position: absolute;
+    margin: 5% 0 0 5%;
+
+    h1 {
+      font-family: Bellefair Display;
+      font-size: 8vh;
+    }
+
+    p {
+      font-family: Barlow Condensed;
+      color: #D0D6F9;
+
+      &:nth-of-type(1) {
+        letter-spacing: 1px;
+        font-size: 3.5vh;
+      }
+
+      &:nth-of-type(2) {
+        width: 40%;
+      }
+    }
+  }
+
+  .launchRight {
+    position: relative;
+    right: -750px;
+    top: -150px;
+  }
 }
