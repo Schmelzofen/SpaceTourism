@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom"
 
+
 const Technology = () => {
     return (
         <section className="tech">
@@ -10,8 +11,16 @@ const Technology = () => {
                     color: isActive ? "black" : null,
                     border: isActive ? "none" : null,
                 })}><div className="">1</div></NavLink>
-                <NavLink className="link2 ball" to="/tech/port"><div className="">2</div></NavLink>
-                <NavLink className="link2 ball" to="/tech/capsule"><div className="">3</div></NavLink>
+                <NavLink className="link2 ball" to="/tech/port" style={({ isActive }) => ({
+                    background: isActive ? 'white' : null,
+                    color: isActive ? "black" : null,
+                    border: isActive ? "none" : null,
+                })}><div className="">2</div></NavLink>
+                <NavLink className="link2 ball" to="/tech/capsule" style={({ isActive }) => ({
+                    background: isActive ? 'white' : null,
+                    color: isActive ? "black" : null,
+                    border: isActive ? "none" : null,
+                })}><div className="">3</div></NavLink>
             </div>
         </section>
     );

@@ -59,22 +59,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
 /* Bellefair, Barlow Condensed */
 .App {
   position: relative;
@@ -147,7 +131,7 @@ select {
   .explore {
     position: absolute;
     bottom: 100px;
-    right: 60px;
+    right: 80px;
     padding: 8% 4%;
     background: white;
     display: inline;
@@ -156,6 +140,18 @@ select {
     font-size: 5vh;
     font-weight: lighter;
     letter-spacing: 2px;
+    cursor: pointer;
+    animation-direction: reverse;
+    transition: 1s linear;
+    border: 1px solid white;
+
+    &:hover {
+      transition: 1s linear;
+      border: 70px solid darkgrey;
+      padding: 6% 2%;
+      bottom: 60px;
+      right: 40px;
+    }
   }
 }
 
