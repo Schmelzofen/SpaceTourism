@@ -11,18 +11,22 @@ const Planet = ({ hr, img, name, description, distance, travel, distanceText, tr
                             <li><NavLink className="link" to="/destination/moon"
                                 style={({ isActive }) => ({
                                     borderBottom: isActive ? '3px solid white' : null,
+                                    color: isActive ? "white" : null,
                                 })}>MOON</NavLink></li>
                             <li><NavLink className="link" to="/destination/mars"
                                 style={({ isActive }) => ({
                                     borderBottom: isActive ? '3px solid white' : null,
+                                    color: isActive ? "white" : null,
                                 })}>MARS</NavLink></li>
                             <li><NavLink className="link" to="/destination/europa"
                                 style={({ isActive }) => ({
                                     borderBottom: isActive ? '3px solid white' : null,
+                                    color: isActive ? "white" : null,
                                 })}>EUROPA</NavLink></li>
                             <li><NavLink className="link" to="/destination/titan"
                                 style={({ isActive }) => ({
                                     borderBottom: isActive ? '3px solid white' : null,
+                                    color: isActive ? "white" : null,
                                 })}>TITAN</NavLink></li>
                         </ul>
                     </div>
