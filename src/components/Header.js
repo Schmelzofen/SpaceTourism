@@ -1,5 +1,5 @@
 import logo from "../assets/shared/logo.svg"
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Header = () => {
     return (
@@ -9,14 +9,22 @@ const Header = () => {
             <div className="headerBar">
                 <nav>
                     <ul>
-                        <li><Link className="link" to="/"><span>00</span>HOME</Link></li>
-                        <li><Link className="link" to="/destination/moon"><span>01</span>DESTINATION</Link></li>
-                        <li><Link className="link" to="/crew/douglas"><span>02</span>CREW</Link></li>
-                        <li><Link className="link" to="/tech/launch"><span>03</span>TECHNOLOGY</Link></li>
+                        <li><NavLink className="link3" to="/" style={({ isActive }) => ({
+                            borderBottom: isActive ? '3px solid white' : null,
+                        })}><span>00</span>HOME</NavLink></li>
+                        <li><NavLink className="link3" to="/destination/moon" style={({ isActive }) => ({
+                            borderBottom: isActive ? '3px solid white' : null,
+                        })}><span>01</span>DESTINATION</NavLink></li>
+                        <li><NavLink className="link3" to="/crew/douglas" style={({ isActive }) => ({
+                            borderBottom: isActive ? '3px solid white' : null,
+                        })}><span>02</span>CREW</NavLink></li>
+                        <li><NavLink className="link3" to="/tech/launch" style={({ isActive }) => ({
+                            borderBottom: isActive ? '3px solid white' : null,
+                        })}><span>03</span>TECHNOLOGY</NavLink></li>
                     </ul>
                 </nav>
             </div>
-        </div>
+        </div >
     );
 }
 

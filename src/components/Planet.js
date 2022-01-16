@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Planet = ({ hr, img, name, description, distance, travel, distanceText, travelText }) => {
     return (
@@ -8,10 +8,22 @@ const Planet = ({ hr, img, name, description, distance, travel, distanceText, tr
                 <article className="planetDetail">
                     <div className="planets">
                         <ul>
-                            <li><Link className="link" to="/destination/moon">MOON</Link></li>
-                            <li><Link className="link" to="/destination/mars">MARS</Link></li>
-                            <li><Link className="link" to="/destination/europa">EUROPA</Link></li>
-                            <li><Link className="link" to="/destination/titan">TITAN</Link></li>
+                            <li><NavLink className="link" to="/destination/moon"
+                                style={({ isActive }) => ({
+                                    borderBottom: isActive ? '3px solid white' : null,
+                                })}>MOON</NavLink></li>
+                            <li><NavLink className="link" to="/destination/mars"
+                                style={({ isActive }) => ({
+                                    borderBottom: isActive ? '3px solid white' : null,
+                                })}>MARS</NavLink></li>
+                            <li><NavLink className="link" to="/destination/europa"
+                                style={({ isActive }) => ({
+                                    borderBottom: isActive ? '3px solid white' : null,
+                                })}>EUROPA</NavLink></li>
+                            <li><NavLink className="link" to="/destination/titan"
+                                style={({ isActive }) => ({
+                                    borderBottom: isActive ? '3px solid white' : null,
+                                })}>TITAN</NavLink></li>
                         </ul>
                     </div>
                 </article>
