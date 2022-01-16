@@ -160,34 +160,38 @@ select {
 }
 
 // BALLS
-.whiteballs div {
+.whiteballs {
+  padding: 4% 0 0 0;
+}
+
+.link4 {
   display: inline-block;
   height: 20px;
   width: 20px;
-  background: white;
+  background: grey;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 20px;
   position: absolute;
 }
 
 .ball1 {
   bottom: 50px;
-  left: 140px;
+  left: 150px;
 }
 
 .ball2 {
   bottom: 50px;
-  left: 175px;
+  left: 185px;
 }
 
 .ball3 {
   bottom: 50px;
-  left: 210px;
+  left: 220px;
 }
 
 .ball4 {
   bottom: 50px;
-  left: 245px;
+  left: 255px;
 }
 
 // ---------------------
@@ -342,7 +346,7 @@ select {
     display: flex;
 
     .left {
-      margin: 8% 0 0 0;
+      margin: 6% 0 0 0;
 
       h1 {
         font-family: Bellefair Display;
@@ -394,18 +398,20 @@ select {
 
   .techNav {
     position: absolute;
-    bottom: 120px;
+    bottom: 100px;
     left: 140px;
 
-    div {
+    .ball {
       height: 100px;
       width: 100px;
-      background: white;
+      background: none;
       display: flex;
       justify-content: center;
       align-items: center;
       border-radius: 50%;
       margin-top: 30px;
+      border: 1px solid grey;
+      color: white;
     }
   }
 }
@@ -415,4 +421,10 @@ select {
   color: black;
   font-family: Bellefair Display;
   font-size: 5vh;
+}
+
+/* INVISIBLE */
+
+.invisible {
+  display: none;
 }

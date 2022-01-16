@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 const Technology = () => {
     return (
         <section className="tech">
             <h1><span>03</span> SPACE LAUNCH 101</h1>
             <div className="techNav">
-                <Link className="link2" to="/tech/launch"><div className="ball">1</div></Link>
-                <Link className="link2" to="/tech/port"><div className="ball">2</div></Link>
-                <Link className="link2" to="/tech/capsule"><div className="ball">3</div></Link>
+                <NavLink className="link2 ball" to="/tech/launch" style={({ isActive }) => ({
+                    background: isActive ? 'white' : null,
+                    color: isActive ? "black" : null,
+                    border: isActive ? "none" : null,
+                })}><div className="">1</div></NavLink>
+                <NavLink className="link2 ball" to="/tech/port"><div className="">2</div></NavLink>
+                <NavLink className="link2 ball" to="/tech/capsule"><div className="">3</div></NavLink>
             </div>
         </section>
     );
