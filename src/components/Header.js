@@ -10,14 +10,11 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li><Link className="link" to="/"><span>00</span>HOME</Link></li>
-                        <li><Link className="link" to="/destination"><span>01</span>DESTINATION</Link></li>
-                        <li><Link className="link" to="/crew"><span>02</span>CREW</Link></li>
-                        <li><Link className="link" to="/tech"><span>03</span>TECHNOLOGY</Link></li>
+                        <li><Link className="link" to="/destination/moon"><span>01</span>DESTINATION</Link></li>
+                        <li><Link className="link" to="/crew/douglas"><span>02</span>CREW</Link></li>
+                        <li><Link className="link" to="/tech/launch"><span>03</span>TECHNOLOGY</Link></li>
                     </ul>
                 </nav>
-            </div>
-            <div className="blurBar">
-
             </div>
         </div>
     );

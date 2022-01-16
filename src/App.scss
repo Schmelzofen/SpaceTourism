@@ -47,7 +47,7 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-width: 100%;
+  /* max-width: 100%; */
   display: block;
 }
 
@@ -236,7 +236,7 @@ select {
   ul {
     display: flex;
     list-style-type: none;
-    margin: 4% 0 0 47.5%;
+    margin: 2% 0 0 47.5%;
 
     li {
       margin-right: 45px;
@@ -250,11 +250,11 @@ select {
   display: flex;
 
   .planetLeft img {
-    width: 1000px;
+    width: 400px;
   }
 
   .planetRight {
-    margin: 0% 0 0 18%;
+    margin: 0% 0 0 20%;
 
     hr {
       width: 63%;

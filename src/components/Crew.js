@@ -12,7 +12,7 @@ const Crew = ({ title, person, text, image }) => {
                         <p>{text}</p>
                     </div>
                     <div className="right">
-                        <img src={image} alt={person} />
+                        <img src={image} alt={person} height="650" />
                     </div>
                 </section>
                 <div className="whiteballs">
