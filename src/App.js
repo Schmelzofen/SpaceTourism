@@ -28,7 +28,8 @@ import Spaceport from "./components/technology/Spaceport"
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";
 
 function App() {
@@ -40,21 +41,21 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* PLANETS */}
-          <Route path="/destination" element={<Planet />} />
+          <Route path="/destination/" element={<Navigate to="/destination/moon" />} />
           <Route path="/destination/moon" element={<Moon />} />
           <Route path="/destination/mars" element={<Mars />} />
           <Route path="/destination/titan" element={<Titan />} />
           <Route path="/destination/europa" element={<Europa />} />
 
           {/* CREW */}
-          <Route path="/crew" element={<Crew />} />
+          <Route path="/crew" element={<Navigate to="/crew/douglas" />} />
           <Route path="/crew/douglas" element={<Douglas />} />
           <Route path="/crew/mark" element={<Mark />} />
           <Route path="/crew/victor" element={<Victor />} />
           <Route path="/crew/ansari" element={<Ansari />} />
 
           {/* TECH */}
-          <Route path="/tech" element={<Technology />} />
+          <Route path="/tech" element={<Navigate to="/tech/launch" />} />
           <Route path="/tech/launch" element={<Launch />} />
           <Route path="/tech/port" element={<Spaceport />} />
           <Route path="/tech/capsule" element={<Capsule />} />

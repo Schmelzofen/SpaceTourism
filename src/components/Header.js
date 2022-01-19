@@ -13,13 +13,13 @@ const Header = () => {
                         <li><NavLink className="link3" to="/" style={({ isActive }) => ({
                             borderBottom: isActive ? '3px solid white' : null,
                         })}><span>00</span>HOME</NavLink></li>
-                        <li><NavLink className="link3" strict to="/destination/moon" style={({ isActive }) => ({
+                        <li><NavLink className="link3" to="/destination" isActive={(match, location) => { return true }} style={({ isActive }) => ({
                             borderBottom: isActive ? '3px solid white' : null,
                         })}><span>01</span>DESTINATION</NavLink></li>
-                        <li><NavLink className="link3" strict to="/crew/douglas" style={({ isActive }) => ({
+                        <li><NavLink className="link3" to="/crew" isActive={(match, location) => { return true }} style={({ isActive }) => ({
                             borderBottom: isActive ? '3px solid white' : null,
                         })}><span>02</span>CREW</NavLink></li>
-                        <li><NavLink className="link3" strict to="/tech/launch" style={({ isActive }) => ({
+                        <li><NavLink className="link3" to="/tech" isActive={(match, location) => { return true }} style={({ isActive }) => ({
                             borderBottom: isActive ? '3px solid white' : null,
                         })}><span>03</span>TECHNOLOGY</NavLink></li>
                     </ul>

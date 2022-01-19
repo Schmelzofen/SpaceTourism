@@ -124,6 +124,7 @@ select {
   &:hover {
     border-bottom: 2px solid #979797;
   }
+
 }
 
 .link3 {
@@ -133,6 +134,10 @@ select {
   transition: .3s ease-in-out;
 
   &:hover {
+    border-bottom: 4px solid #979797;
+  }
+
+  &:active {
     border-bottom: 4px solid #979797;
   }
 }
